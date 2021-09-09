@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset='UTF-8'/>
+		<link rel='stylesheet' href='../src/stylesheet.css'/>
+	</head>
+	<body>
+		<header>
+		    <nav>
+		      <div class='nav-link-container'><a class='nav-link' href="../index.html#welcome-section">Welcome</a></div><!--
+		      --><div class='nav-link-container'><a class='nav-link' href="../index.html#main-content">Main content</a></div><!--
+		      --><div class='nav-link-container'><a class='nav-link' href="#main">Contact</a></div>
+		    </nav>
+		  </header>
+		  <main id='main'>
+		    <h1 id='title'>Contact Form</h1>
+		    <fieldset>
+		      <form id='survey-form' method='PUT' action='../index.html'>
+			<label id='name-label' class='text-input-label' for='name'/>Name</label>
+			<input id='name' type='text' placeholder="Name" required/>
+			<br/>
+			<label id='email-label' class='text-input-label' for='email'/>Email</label>
+			<input id='email' type='email' placeholder="Email" required/>
+			<br/>
+			<label id='gender-label' class='text-input-label' for='gender'/>Gender</label>
+			<select id='gender' name='gender'>
+			  <option value="Female">Female</option>
+			  <option value="Male">Male</option>
+			  <option selected value="Other/Prefer not to say">Other/Prefer not to say</option>
+			</select>
+			<div class='group' id='product'>
+			  <label class='group-label' for='recommend'>Which of our products are you contacting us about?</label>
+			  <input name='product' id='product-yes' type='radio' value="A"/>
+			  <label class='checkbox-radio-label' for='recommend-A'/>A</label>
+			  <br/>
+			  <input name='product' id='product-no' type='radio' value="B"/>
+			  <label class='checkbox-radio-label' for='recommend-B'/>B</label>
+			  <br/>
+			  <input name='product' id='product-maybe' type='radio' value="C"/>
+			  <label class='checkbox-radio-label' for='recommend-C'/>C</label>
+			</div>
+			<br/>
+			<label class='text-input-label' for 'message'>Message/Feedback</label>
+			<textarea id='message' name='message' placeholder="Message/Feedback"></textarea>
+			<button id='submit-button' type='submit'>Submit</button>
+		      </form>
+		    </fieldset>
+		  </main>
+		  <footer id='contact'>
+		    <nav>
+			      <div class='nav-link-container'><a class='nav-link' href="../index.html#welcome-section">Welcome</a></div><!--
+			      --><div class='nav-link-container'><a class='nav-link' href="../index.html#main-content">Main content</a></div><!--
+			      --><div class='nav-link-container'><a class='nav-link' href="#main">Contact</a></div>
+		</nav>
+	  	</footer>
+	</body>
